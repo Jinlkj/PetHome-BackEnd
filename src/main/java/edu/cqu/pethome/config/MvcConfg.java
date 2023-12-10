@@ -18,7 +18,8 @@ public class MvcConfg implements WebMvcConfigurer {
                 .excludePathPatterns(
                         "/api/user/code",
                         "/api/user/login",
-                        "/api/hospital/info/**"
+                        "/api/hospital/info/**",
+                        "/test/hospital/**"
                 ).order(1);
         registry.addInterceptor(new RefreshTokenInterceptor(stringRedisTemplate)).order(0);
     }
