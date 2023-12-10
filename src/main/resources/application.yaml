@@ -1,0 +1,23 @@
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url:  jdbc:mysql://localhost:3307/PetHomeDocker
+    username: root
+    password: 132900124xjxj
+  data:
+    redis:
+      jedis:
+        pool:
+          max-active: 8
+          max-wait: 100
+          min-idle: 0
+          max-idle: 9
+      port: 6379
+  jackson:
+    default-property-inclusion: non_null
+mybatis-plus:
+  type-aliases-package: " "
+server:
+  port: 8082
+
